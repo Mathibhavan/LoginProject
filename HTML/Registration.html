@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../CSS/Registration.css" />
+  </head>
+
+  <body>
+    <h1>Registration Page</h1>
+
+    <label>FirstName: </label>
+    <input
+      type="text"
+      name="fname"
+      id="fname"
+      placeholder="Enter FirstName"
+      required
+    /><br />
+    <label>LastName: </label>
+    <input
+      type="text"
+      name="lname"
+      id="lname"
+      placeholder="Enter LastName"
+      required
+    /><br />
+    <label>Gender: </label>
+    <input type="radio" name="gen" id="gen" />Female
+    <input type="radio" name="gen" id="gen" />Male
+    <input type="radio" name="gen" id="gen" />Others<br />
+    <label>DOB: </label>
+    <input type="date" name="date" id="date" required /><br />
+    <label>Contact Number: </label>
+    <input
+      type="tel"
+      name="contactnum"
+      id="contactnum"
+      placeholder="XXX-XXX-XXXX"
+      required
+    /><br />
+    <label>Email: </label>
+    <input
+      type="text"
+      name="email"
+      id="email"
+      placeholder="Valid Email address"
+      required
+    /><br />
+    <label>Password: </label>
+    <input
+      type="password"
+      name="psw"
+      id="psw"
+      placeholder="Enter Password"
+      required
+    /><br />
+    <label>Conform Password: </label>
+    <input
+      type="password"
+      name="crfmpsw"
+      id="crfmpsw"
+      placeholder="Enter Password"
+      onblur="chk()"
+      required
+    /><br />
+    <label>Select City: </label>
+    <select name="city" id="city">
+      <option value="Chennai">Chennai</option>
+      <option value="Bangalore">Bangalore</option>
+      <option value="Hyderabad">Hyderabad</option>
+      <option value="Mumbai">Mumbai</option></select
+    ><br />
+    <label>Upload File: </label>
+    <input type="file" name="file" id="file" /><br />
+    <input type="checkbox" name="chkbox" id="chkbox" required />I Acknowledge
+    the above details<br />
+    <input
+      type="button"
+      name="submit"
+      id="submit"
+      value="Submit"
+      onclick="submit()"
+    />
+
+    <script src="../JS/Registration.js"></script>
+  </body>
+</html>
